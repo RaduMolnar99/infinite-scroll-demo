@@ -1,0 +1,42 @@
+{
+    "extends": [
+    ],
+    "plugins": [
+        "react",
+        "import",
+        "jest",
+    ],
+    "env": {
+        "browser"      : true,
+        "jest/globals" : true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "no-use-before-define"                   : "off",
+        "no-shadow"                              : "off",
+        "no-multi-spaces"                        : "off",
+        "no-nested-ternary"                      : "off",
+        "no-return-assign"                       : ["error", "except-parens"],
+        "no-unused-expressions"                  : ["error", { "allowTernary": true }],
+        "no-restricted-syntax"                   : ["error", "LabeledStatement", "WithStatement"],
+        "no-restricted-properties"               : "warn",
+        "max-len"                                : ["error", { "code": 120 }],
+        "semi"                                   : ["error", "never"],
+        "object-curly-spacing"                   : ["error", "always"],
+        "object-curly-newline"                   : ["error", { "consistent": true, "multiline": true }],
+        "comma-dangle"                           : ["error", "never"],
+        "arrow-parens"                           : ["error", "always"],
+        "brace-style"                            : ["error", "stroustrup"],
+        "quote-props"                            : ["error", "consistent-as-needed"],
+        "function-paren-newline"                 : ["error", "consistent"],
+        "key-spacing"                            : ["error", {
+                                                        "align": {
+                                                            "beforeColon": true,
+                                                            "afterColon": true,
+                                                            "on": "colon"
+                                                        }
+                                                   }],
+        "indent"                                 : ["error", 4, { "SwitchCase": 1 }]
+    }
+}
+

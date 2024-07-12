@@ -1,11 +1,11 @@
-import List from "./components/List"
+import List from "./components/List";
 
 function App() {
-    return (
-        <div className="App">
-            <List/>
-        </div>
-    )
+  return (
+    <div className="App">
+      <List />
+    </div>
+  );
 }
-
-export default App
+console.log("LALA");
+export default App;
